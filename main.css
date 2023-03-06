@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* row-gap: 5vh; */
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+}
+
+.score {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px;
+    text-align: center;
+}
+
+.scoreNum {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: gainsboro;
+    color: black !important;
+}
+
+.score-item {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.who {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* text-overflow: ellipsis; */
+}
+
+.whoWin {
+    font-weight: 900;
+    background-color: transparent !important;
+}
+
+.game {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.game div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.game div img {
+    object-fit: contain;
+    object-position: center;
+}
+
+.gameHr {
+    width: 15px;
+    height: 65vh;
+    border: none;
+    background-color: gainsboro;
+    border-radius: 5px;
+}
+
+.moveButton {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    column-gap: 5vw;
+}
+
+.moveButton button {
+    display: block;
+    width: 12vh;
+    height: 6vh;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    /* background-color: gainsboro; */
+    /* background-image: linear-gradient(to right top, #f9bbae, #f0b0ae, #e5a5af, #d79cb0, #c794b0); */
+    /* background-image: linear-gradient(to right top, #fd3e00, #ec7600, #d49c00, #babb00, #9dd549); */
+    background-image: linear-gradient(to right top, #9dd549, #87c142, #72ad3b, #5f9934, #4c862d);
+    color: white;
+    cursor: pointer;
+}
+
+.moveButton button:active {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.green {
+    background-color: green;
+    color: green;
+}
+
+.red {
+    background-color: red;
+    color: red;
+}
+
+.white {
+    color: white !important;
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        padding: 20px;
+    }
+    .score {
+        font-size: 20px;
+        text-align: center;
+    }
+    .score-item {
+        width: 150px;
+    }
+    .game div img {
+        width: 150px;
+        height: 300px;
+    }
+}
